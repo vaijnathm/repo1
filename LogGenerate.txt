@@ -1,0 +1,27 @@
+logfile=/var/tmp/server.log
+a=0
+b=0
+while [ 1 ]
+do
+ while [ $a -lt 10 ]
+ do
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  echo "`date '+%Y-%m-%d %H:%M:%S'` INFO [stdout] (default task-2) [default task-2] TRACE o.e.websocket.WebsocketEndpoint - Openend new session" >> $logfile
+  a=`expr $a + 1`
+ done
+   echo "`date '+%Y-%m-%d %H:%M:%S'` ERROR [stderr] (default task-19) java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/jdbc" >> $logfile
+   echo "`date '+%Y-%m-%d %H:%M:%S'` ERROR [stderr] (default task-19)    at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:146)" >> $logfile
+   echo "`date '+%Y-%m-%d %H:%M:%S'` ERROR [stderr] (default task-19)    at org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:64)" >> $logfile
+   echo "`date '+%Y-%m-%d %H:%M:%S'` ERROR [stderr] (default task-19)    at com.org.mason.GlobalMethod.GetDatabaseConnection(GlobalMethod.java:21)" >> $logfile
+   echo "`date '+%Y-%m-%d %H:%M:%S'` ERROR [stderr] (default task-19)    at com.org.mason.dao.MasonWebPage.getRecords(MasonWebPage.java:65)" >> $logfile
+done
